@@ -77,5 +77,5 @@ A simple [blog](https://github.com/btford/angular-express-blog) based on this se
 ## Contact
 
 For more information on AngularJS please check out http://angularjs.org/
-For more on Express and Jade, http://expressjs.com/ and http://jade-lang.com/ are
+For more on Express, Stylus and Jade, http://expressjs.com/, http://learnboost.github.com/stylus/ and http://jade-lang.com/ are
 your friends.
