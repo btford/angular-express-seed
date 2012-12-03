@@ -23,6 +23,7 @@ Clone the angular-express-seed repository and start hacking!
 
 Runs like a typical express app:
 
+    npm install
     node app.js
 
 ### Running tests
@@ -35,12 +36,12 @@ Just fetch the changes and merge them into your project with git.
 
 
 ## Directory Layout
-    
+
     app.js              --> app config
     package.json        --> for npm
     public/             --> all of the files to be used in on the client side
       css/              --> css files
-        app.css         --> default stylesheet
+        app.css         --> css stylesheets generated from stylus ones
       img/              --> image files
       js/               --> javascript files
         app.js          --> declare top-level app module
@@ -58,6 +59,8 @@ Just fetch the changes and merge them into your project with git.
       api.js            --> route for serving JSON
       index.js          --> route for serving HTML pages and partials
     views/
+      css/              --> stylus stylesheets
+        app.styl
       index.jade        --> main page for app
       layout.jade       --> doctype, title, head boilerplate
       partials/         --> angular view partials (partial jade templates)
