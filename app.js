@@ -5,7 +5,8 @@
 
 var express = require('express'),
   routes = require('./routes'),
-  api = require('./routes/api');
+  api = require('./routes/api'),
+  stylus = require('stylus');
 
 var app = module.exports = express();
 
@@ -16,6 +17,16 @@ app.configure(function(){
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
+  app.use(stylus.middleware({
+    src: __dirname + '/views', // .styl files are located in `views/css`
+    dest: __dirname + '/public', // .styl resources are compiled `/css/*.css`
+    compile: function(str, path) { // optional, but recommended
+      return stylus(str)
+      .set('filename', path)
+      .set('warn', true)
+      .set('compress', true);
+      }
+    }));
   app.use(express.static(__dirname + '/public'));
   app.use(app.router);
 });
