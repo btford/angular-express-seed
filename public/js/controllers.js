@@ -21,6 +21,10 @@ angular.module('myApp.controllers', []).
     // write Ctrl here
 
   }).
+  controller('homeCtrl', function ($scope) {
+    // write Ctrl here
+
+  })
   controller('MyCtrl2', function ($scope) {
     // write Ctrl here
 
