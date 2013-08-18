@@ -17,7 +17,7 @@ angular.module('myApp.controllers', []).
     });
 
   }).
-  controller('MyCtrl1', function ($scope) {
+  controller('loginCtrl', function ($scope) {
     // write Ctrl here
 
   }).
