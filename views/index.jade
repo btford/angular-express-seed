@@ -2,18 +2,22 @@ extends layout
 
 block body
   div(ng-controller='AppCtrl')
-    h2 Hello {{name}}
-    ul.menu
-      li
+
+    .navbar.container
+     .nav-collapse.collapse.navbar-responsive-collapse
+      ul.nav.navbar-nav
+       li
         a(href='view1') Home
-      li
-        a(href='view2') About
+       li
+        a(href='view2') Buy
+       li
+        a(href='view3') Sell
 
     div(ng-view)
 
-    div
-      | Angular seed app: v
-      span(app-version)
+  .container
+   .well.text-center
+    h2 Welcome To The Largest Marketplace in Botswana
 
   script(src='js/lib/angular/angular.js')
   script(src='js/app.js')
