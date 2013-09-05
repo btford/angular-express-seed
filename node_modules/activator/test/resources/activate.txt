@@ -1,0 +1,7 @@
+Activate Email
+-------
+This is where everything goes for activate. Please click on the following URL:
+
+<%= request.protocol %>://<%= request.headers.host %>/activate/my/account?code=<%= code %>&email=<%= email %>&user=<%= id %>
+
+Thanks!

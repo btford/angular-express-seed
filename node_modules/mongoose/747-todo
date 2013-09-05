@@ -1,0 +1,15 @@
+
+X merge tests
+X update tests with new error messages
+X add inline documentation
+X add website documentation
+X add website documentation around custom validators using new {TEMPLATING} helpers
+
+-- docs --
+
+- calling doc#invalidate()
+  - no longer uses the error message argument for the ValidationError "type" property
+  - the error message argument will be used as is for the error message. {TEMPLATING} is supported
+  - for custom validators, the error `type` property will always be set to "user defined"
+
+Any other changes??
