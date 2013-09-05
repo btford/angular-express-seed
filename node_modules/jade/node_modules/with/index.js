@@ -1,13 +1,12 @@
-var scope = require('lexical-scope')
+var uglify = require('uglify-js')
+
 
 module.exports = addWith
 
 function addWith(obj, src, exclude) {
   exclude = exclude || []
-  var objScope = scope(obj)
-  exclude = exclude.concat(objScope.globals.implicit).concat(objScope.globals.exported)
-  var s = scope('(function () {' + src + '}())')//allows the `return` keyword
-  var vars = s.globals.implicit
+  exclude = exclude.concat(detect(obj))
+  var vars = detect('(function () {' + src + '}())')//allows the `return` keyword
     .filter(function (v) {
       return !(v in global) && exclude.indexOf(v) === -1
     })
@@ -19,7 +18,7 @@ function addWith(obj, src, exclude) {
   if (/^[a-zA-Z0-9$_]+$/.test(obj)) {
     local = obj
   } else {
-    while (s.globals.implicit.indexOf(local) != -1 || s.globals.exported.indexOf(local) != -1 || exclude.indexOf(local) != -1  || obj.indexOf(local) != -1) {
+    while (vars.indexOf(local) != -1 || exclude.indexOf(local) != -1) {
       local += '_'
     }
     declareLocal = local + ' = (' + obj + '),'
@@ -28,4 +27,14 @@ function addWith(obj, src, exclude) {
     .map(function (v) {
       return v + ' = ' + local + '.' + v
     }).join(',') + ';' + src
+}
+
+function detect(src) {
+    var ast = uglify.parse(src.toString())
+    ast.figure_out_scope()
+    var globals = ast.globals
+        .map(function (node, name) {
+            return name
+        })
+    return globals;
 }

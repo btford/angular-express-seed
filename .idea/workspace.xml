@@ -1,16 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15d62cac-4392-435b-ac9c-ae497be15637" name="Default" comment="Basic nav, more planning required before more code.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
+    <list default="true" id="15d62cac-4392-435b-ac9c-ae497be15637" name="Default" comment="Installed all dependencies">
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\commander\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\commander\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\commander\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\commander\lib\commander.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\test\mocha.opts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\test\parse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\cookie\test\serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\lib\send.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\lib\utils.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\node_modules\mime\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\node_modules\mime\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\node_modules\mime\mime.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\node_modules\mime\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\node_modules\mime\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\node_modules\mime\types\mime.types" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\node_modules\mime\types\node.types" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\connect\node_modules\send\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\character-parser\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\character-parser\test\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\commander\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\commander\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\commander\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\commander\node_modules\keypress\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\commander\node_modules\keypress\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\commander\node_modules\keypress\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\commander\node_modules\keypress\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\node_modules\lru-cache\s.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\monocle\test\sample_files\creation3.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\monocle\test\sample_files\creation4.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\monocle\test\sample_files\creation5.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\build\build.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\build\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-classes\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-classes\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-delegate\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-delegate\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-dom\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-dom\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-domify\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-domify\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-event\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-event\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-indexof\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-indexof\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-matches-selector\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-matches-selector\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-type\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\components\component-type\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\component\second.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\fixtures\uglify-js\script.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\atpl\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\atpl\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cdata\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cdata\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cdata\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cdata\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffee-script\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffee-script\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffee-script\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffee-script\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffeecup\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffeecup\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffeecup\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\coffeecup\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cson\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cson\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cson\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\cson\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\dot\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\dot\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\dust\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\dust\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\eco\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\eco\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\ect\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\ect\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\ejs\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\ejs\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\haml-coffee\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\haml-coffee\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\haml\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\haml\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\haml\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\haml\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\handlebars\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\handlebars\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\hogan\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\hogan\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\html2jade\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\html2jade\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\html2jade\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\html2jade\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\jade\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\jade\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\jazz\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\jazz\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\jqtpl\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\jqtpl\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\just\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\just\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\less\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\less\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\less\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\less\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\liquor\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\liquor\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\markdown\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\markdown\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\markdown\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\markdown\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\mote\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\mote\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\mustache\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\mustache\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\plates\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\plates\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\plates\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\plates\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\qejs\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\qejs\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\sass\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\sass\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\sass\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\sass\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\stylus\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\stylus\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\stylus\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\stylus\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\swig\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\swig\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\templayed\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\templayed\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\toffee\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\toffee\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-css\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-css\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-css\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-css\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-json\sample-a-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-json\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-json\sample-b-expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\uglify-json\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\underscore\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\underscore\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\walrus\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\walrus\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\whiskers\sample-a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\simple\whiskers\sample-b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\transformers\test\update-package.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\bench\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\bench\results.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\bench\run.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\example\detect.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\example\src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\example\types.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\.bin\esparse" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\.bin\esparse.cmd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\.bin\esvalidate" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\.bin\esvalidate.cmd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\LICENSE.BSD" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\bin\esparse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\bin\esvalidate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\doc\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\esprima.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\examples\detectnestedternary.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\examples\findbooleantrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\examples\tokendist.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\benchmarks.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\benchmarks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\compare.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\compare.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\compat.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\compat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\coverage.footer.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\coverage.header.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\coverage.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\module.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\module.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\reflect.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\run.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\runner.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\node_modules\esprima\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\node_modules\astw\test\parent.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\argument.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\assign_implicit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\detect.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\argument.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\assign_implicit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\detect.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\multiple-exports.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\named_arg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\obj.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\return_hash.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\files\right_hand.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\multiple-exports.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\named_arg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\obj.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\return_hash.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\right_hand.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\node_modules\lexical-scope\test\shebang.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\jade\node_modules\with\test\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\npm-debug.log" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Godwill\Documents\GitHub\semausu\node_modules\express\node_modules\mkdirp\README.markdown" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/mkdirp/readme.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/Readme_zh-cn.md" afterPath="$PROJECT_DIR$/node_modules/jade/Readme_zh-cn.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/.npmignore" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/.npmignore" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/.npmignore" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/mkdirp/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/mkdirp/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/History.md" afterPath="$PROJECT_DIR$/node_modules/express/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/commander/History.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/commander/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/History.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/History.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/LICENSE" afterPath="$PROJECT_DIR$/node_modules/express/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/README.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/README.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/README.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/README.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/Readme.md" afterPath="$PROJECT_DIR$/node_modules/express/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/commander/Readme.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/commander/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/Readme.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/Readme.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/Readme.md" afterPath="$PROJECT_DIR$/node_modules/jade/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/Readme.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/application.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/array-set.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/array-set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/attrs.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/attrs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/block-comment.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/block-comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/block.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/block.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/case.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/case.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/code.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/code.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/comment.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/compiler.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/compiler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/component.json" afterPath="$PROJECT_DIR$/node_modules/jade/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/compress.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/compress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/cookieSession.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/cookieSession.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/csrf.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/csrf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/doctype.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/doctype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/each.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/each.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/express.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/express.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/bin/express" afterPath="$PROJECT_DIR$/node_modules/express/bin/express" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/filter.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/sample_files/foo.txt" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/sample_files/foo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/history.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/history.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/router/index.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/commander/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/index.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/index.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/index.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/jade.js" afterPath="$PROJECT_DIR$/node_modules/jade/jade.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/jade.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/jade.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/bin/jade" afterPath="$PROJECT_DIR$/node_modules/jade/bin/jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/json.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/lexer.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/lexer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/literal.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/literal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/logger.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/logger.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/sample_files/longbow.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/sample_files/longbow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/middleware.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/middleware.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/mime.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/mime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/types/mime.types" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/types/mime.types" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/mixin.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/mixin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/monocle.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/monocle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/multipart.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/multipart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/types/node.types" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/types/node.types" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/package.json" afterPath="$PROJECT_DIR$/node_modules/express/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/commander/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/pause/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/pause/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/mkdirp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/parser.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/proto.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/proto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/request.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/request.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/response.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/response.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/runtime.js" afterPath="$PROJECT_DIR$/node_modules/jade/runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/runtime.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/lib/send.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/lib/send.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/sample_files/nestedDir/servent.txt" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/sample_files/nestedDir/servent.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/session.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/session.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-node.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/static.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/static.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/tag.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/tag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-array-set.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-array-set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-generator.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/test.js" afterPath="$PROJECT_DIR$/node_modules/express/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/test.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/test.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/tester.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/test/tester.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/text.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/timeout.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/timeout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/lib/transformers.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/lib/transformers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/urlencoded.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/urlencoded.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="semausu.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1378373563717" ignored="false" />
+    <file path="/Dummy.txt" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1378376922597" ignored="false" />
     <file path="/layout.jade" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1377076486152" ignored="false" />
     <file path="/index.jade" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1377078007312" ignored="false" />
-    <file path="$PROJECT_DIR$/../node-crud/package.json" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1378372762788" ignored="false" />
+    <file path="$PROJECT_DIR$/../node-crud/package.json" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1378375775609" ignored="false" />
     <file path="/package.json" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1378372710180" ignored="false" />
     <file path="$PROJECT_DIR$/../node-crud/server.js" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1378305801274" ignored="false" />
     <file path="/server.js" changelist="15d62cac-4392-435b-ac9c-ae497be15637" time="1378305790202" ignored="false" />
@@ -45,7 +390,7 @@
       <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="35" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.84082395">
+            <state line="33" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.7940075">
               <folding />
             </state>
           </provider>
@@ -208,6 +553,14 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -243,17 +596,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32410613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24441762" sideWeight="0.6758939" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24441762" sideWeight="0.6758939" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -423,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.84082395">
+        <state line="33" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.7940075">
           <folding />
         </state>
       </provider>

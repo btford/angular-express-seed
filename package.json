@@ -31,7 +31,6 @@
         "underscore":"latest",
         "nodemailer": "latest",
         "crypto": "latest",
-        "humane-dates": "https://github.com/zachleat/Humane-Dates/archive/master.zip",
         "activator": "latest",
         "validator": "latest",
         "request": "latest",

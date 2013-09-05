@@ -1,3 +1,11 @@
+## 2.1.0 - 2013-07-13
+
+ - **verbatim**
+ - **cdata-js**
+ - **cdata-css**
+ - fix escaping in **cdata**
+ - fix **less** errors
+
 ## 2.0.1 - 2013-04-22
 
  - Fix global leak of `exportscoffeeScript` (test still fails because `jade` requires an out of date version of `transformers`)
