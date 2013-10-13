@@ -1,9 +1,50 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
-  "dependencies": {
-    "express": "~3.2.6",
-    "jade": "~0.31.2"
-  }
+    "name": "node-crud",
+    "description": "A node/express web app",
+    "version": "0.0.1",
+    "author": {
+        "name": "Godwill Likius",
+        "email": "klikius@yahoo.com"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    },
+    "scripts": {
+        "start": "NODE_PATH=./app/controllers NODE_ENV=development ./node_modules/.bin/nodemon server.js",
+        "test": "make test"
+    },
+    "dependencies": {
+        "express": "latest",
+        "mongoose": "latest",
+        "mongoose-user": "latest",
+        "mongoose-auth": "latest",
+        "passport": "latest",
+        "passport-local": "latest",
+        "connect-mongo": "latest",
+        "connect-flash": "latest",
+        "view-helpers": "latest",
+        "jade": "latest",
+        "socket.io": "latest",
+        "async": "latest",
+        "less":"latest",
+        "underscore":"latest",
+        "nodemailer": "latest",
+        "crypto": "latest",
+        "activator": "latest",
+        "validator": "latest",
+        "request": "latest",
+        "forever": "latest"
+    },
+    "devDependencies": {
+        "nodemon": "latest",
+        "mocha": "latest",
+        "should": "latest",
+        "supertest": "latest"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "crud"
+    ]
 }
