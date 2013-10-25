@@ -26,14 +26,19 @@ app.use(express.methodOverride());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
-// development only
 if (app.get('env') === 'development') {
+  // development only pretty error handling middleware
   app.use(express.errorHandler());
-}
-
-// production only
-if (app.get('env') === 'production') {
-  // TODO
+} else {
+  // simple error handling function for non-dev env
+  app.use(function(err, req, res, next) {
+    console.error(err.stack);
+    if (req.xhr) {
+      res.send(500, { error: err.message });
+    } else {
+      res.send(500, err.message);
+    }
+  });
 };
 
 
