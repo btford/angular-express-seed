@@ -1,4 +1,4 @@
-# Angular Express Seed
+# Require Angular Express Seed
 
 Start an awesome app with AngularJS on the front, Express + Node on the back. This project is an
 application skeleton for a typical [AngularJS](http://angularjs.org/) web app for those who want
@@ -15,9 +15,9 @@ _Note: Although Jade supports interpolation, you should be doing that mostly on 
 server and browser templating will convolute your app. Instead, use Jade as a syntactic sugar for
 HTML, and let AngularJS take care of interpolation on the browser side._
 
-## How to use angular-express-seed
+## How to use require-angular-express-seed
 
-Clone the angular-express-seed repository, run `npm install` to grab the dependencies, and start hacking!
+Clone the require-angular-express-seed repository, run `npm install` to grab the dependencies, and start hacking!
 
 ### Running the app
 
@@ -43,17 +43,20 @@ Just fetch the changes and merge them into your project with git.
         app.css         --> default stylesheet
       img/              --> image files
       js/               --> javascript files
-        app.js          --> declare top-level app module
-        controllers.js  --> application controllers
-        directives.js   --> custom angular directives
-        filters.js      --> custom angular filters
-        services.js     --> custom angular services
+        modules/
+          controllers.js  --> application controllers
+          directives.js   --> custom angular directives
+          filters.js      --> custom angular filters
+          services.js     --> custom angular services
         lib/            --> angular and 3rd party JavaScript libraries
           angular/
             angular.js            --> the latest angular js
             angular.min.js        --> the latest minified angular js
             angular-*.js          --> angular add-on modules
             version.txt           --> version number
+          require.js            --> the latest require js
+        app.js          --> declare top-level app module
+        config.js          --> requirejs configurations
     routes/
       api.js            --> route for serving JSON
       index.js          --> route for serving HTML pages and partials
