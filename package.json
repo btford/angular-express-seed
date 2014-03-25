@@ -5,5 +5,18 @@
   "dependencies": {
     "express": "~3.2.6",
     "jade": "~0.31.2"
+  },
+  "devDependencies": {
+    "karma": "~0.12.1",
+    "mocha": "~1.18.2",
+    "supertest": "~0.10.0",
+    "should": "~3.2.0-beta1",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1.2",
+    "phantomjs": "~1.9.7-1"
+  },
+  "scripts": {
+    "test": "make test",
+    "test-client": "make test-client"
   }
 }
