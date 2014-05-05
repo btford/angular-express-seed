@@ -1,0 +1,9 @@
+{
+  "name": "angular-express-seed-pure",
+  "version": "1.0.0",
+  "dependencies": {
+    "normalize": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest"
+  }
+}
