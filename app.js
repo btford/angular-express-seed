@@ -31,6 +31,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var env = process.env.NODE_ENV || 'development';
 
+// middleware function puts hash before req.params
+// redirect logic falls back to angular $routeProvider
+app.use(function(req, res) {
+	return res.redirect(req.protocol + '://' + req.get('Host') + '/#' + req.url)
+});
+
 // development only
 if (env === 'development') {
   app.use(express.errorHandler());
@@ -52,9 +58,6 @@ app.get('/partials/:name', routes.partials);
 
 // JSON API
 app.get('/api/name', api.name);
-
-// redirect all others to the index (HTML5 history)
-app.get('*', routes.index);
 
 
 /**
