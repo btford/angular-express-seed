@@ -8,13 +8,13 @@ var express = require('express'),
   methodOverride = require('method-override'),
   errorHandler = require('errorhandler'),
   morgan = require('morgan'),
+  partials = require('./routes/partials'),
   routes = require('./routes'),
   api = require('./routes/api'),
   http = require('http'),
   path = require('path');
 
 var app = module.exports = express();
-
 
 /**
  * Configuration
@@ -47,16 +47,24 @@ if (env === 'production') {
  * Routes
  */
 
-// serve index and view partials
-app.get('/', routes.index);
-app.get('/partials/:name', routes.partials);
+// serve index  
+app.use('/', routes);
+
+// server view partials
+app.use('/partials', partials);
 
 // JSON API
-app.get('/api/name', api.name);
+// app.use('/api', api);
 
 // redirect all others to the index (HTML5 history)
-app.get('*', routes.index);
+// app.get('*', function(req, res, next) {
+//   res.render('index');
+// });
 
+/// catch 404 and forward to error handler
+// app.use('*', function(req, res, next) {
+//   res.render('index');
+// });
 
 /**
  * Start Server
