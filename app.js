@@ -8,8 +8,8 @@ var express = require('express'),
   methodOverride = require('method-override'),
   errorHandler = require('errorhandler'),
   morgan = require('morgan'),
-  partials = require('./routes/partials'),
   routes = require('./routes'),
+  partials = require('./routes/partials'),
   api = require('./routes/api'),
   http = require('http'),
   path = require('path');
@@ -54,17 +54,12 @@ app.use('/', routes);
 app.use('/partials', partials);
 
 // JSON API
-// app.use('/api', api);
+app.use('/api', api);
 
 // redirect all others to the index (HTML5 history)
-// app.get('*', function(req, res, next) {
-//   res.render('index');
-// });
-
-/// catch 404 and forward to error handler
-// app.use('*', function(req, res, next) {
-//   res.render('index');
-// });
+app.get('*', function(req, res, next) {
+  res.render('index');
+});
 
 /**
  * Start Server
