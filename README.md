@@ -27,7 +27,10 @@ Runs like a typical express app:
 
 ### Running tests
 
-Coming soon!
+Tests run using Mocha for server-side tests and Karma + Jasmine for client-side.
+
+* to run server-side unit tests: `npm test`
+* to run client-side unit tests: `npm run-script test-client`
 
 ### Receiving updates from upstream
 
@@ -37,6 +40,7 @@ Just fetch the changes and merge them into your project with git.
 ## Directory Layout
     
     app.js              --> app config
+    Makefile            --> scripts for running tests
     package.json        --> for npm
     public/             --> all of the files to be used in on the client side
       css/              --> css files
@@ -57,6 +61,14 @@ Just fetch the changes and merge them into your project with git.
     routes/
       api.js            --> route for serving JSON
       index.js          --> route for serving HTML pages and partials
+    test/
+      apiSpec.js        --> tests for the app's API
+      client/           --> client-side tests
+        unit/           --> client-side unit tests
+          karma.config.js         --> Karma configuration file
+          servicesSpec.js         --> Angular services tests
+      indexSpec.js      --> test page serving
+      specInit.js       --> server-side tests configuration and init
     views/
       index.jade        --> main page for app
       layout.jade       --> doctype, title, head boilerplate
