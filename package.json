@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "~3.2.6",
-    "jade": "~0.31.2"
+    "body-parser": "^1.0.2",
+    "error-handler": "^0.1.4",
+    "express": "~4.1.1",
+    "jade": "~0.31.2",
+    "method-override": "^1.0.0",
+    "morgan": "^1.0.0"
   },
   "devDependencies": {
     "karma": "~0.12.1",
