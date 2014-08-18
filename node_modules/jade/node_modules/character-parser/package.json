@@ -1,0 +1,51 @@
+{
+  "name": "character-parser",
+  "version": "1.0.2",
+  "description": "Parse JavaScript one character at a time to look for snippets in Templates.  This is not a validator, it's just designed to allow you to have sections of JavaScript delimited by brackets robustly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/character-parser.git"
+  },
+  "keywords": [
+    "parser",
+    "JavaScript",
+    "bracket",
+    "nesting",
+    "comment",
+    "string",
+    "escape",
+    "escaping"
+  ],
+  "author": {
+    "name": "ForbesLindesay"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "better-assert": "~1.0.0",
+    "mocha": "~1.9.0"
+  },
+  "_id": "character-parser@1.0.2",
+  "dist": {
+    "shasum": "55384d6afcf8c6b9dd483e8347646a790e4545e7",
+    "tarball": "http://registry.npmjs.org/character-parser/-/character-parser-1.0.2.tgz"
+  },
+  "_from": "character-parser@1.0.2",
+  "_npmVersion": "1.2.10",
+  "_npmUser": {
+    "name": "forbeslindesay",
+    "email": "forbes@lindesay.co.uk"
+  },
+  "maintainers": [
+    {
+      "name": "forbeslindesay",
+      "email": "forbes@lindesay.co.uk"
+    }
+  ],
+  "directories": {},
+  "_shasum": "55384d6afcf8c6b9dd483e8347646a790e4545e7",
+  "_resolved": "https://registry.npmjs.org/character-parser/-/character-parser-1.0.2.tgz"
+}

@@ -1,0 +1,91 @@
+
+
+<div>
+  <a ng-click="openPlunkr('examples/example-example106')" class="btn pull-right">
+    <i class="glyphicon glyphicon-edit">&nbsp;</i>
+    Edit in Plunker</a>
+  <div class="runnable-example"
+      path="examples/example-example106"
+      module="myServiceModuleDI">
+
+   
+    <div class="runnable-example-file" 
+      name="index.html"
+      language="html"
+      type="html">
+      <pre><code>&lt;div id=&quot;implicit&quot; ng-controller=&quot;MyController&quot;&gt;&#10;  &lt;p&gt;Let&#39;s try the notify service, that is implicitly injected into the controller...&lt;/p&gt;&#10;  &lt;input ng-init=&quot;message=&#39;test&#39;&quot; ng-model=&quot;message&quot;&gt;&#10;  &lt;button ng-click=&quot;callNotify(message);&quot;&gt;NOTIFY&lt;/button&gt;&#10;  &lt;p&gt;(you have to click 3 times to see an alert)&lt;/p&gt;&#10;&lt;/div&gt;</code></pre>
+    </div>
+  
+    <div class="runnable-example-file" 
+      name="script.js"
+      language="js"
+      type="js">
+      <pre><code>angular.module(&#39;myServiceModuleDI&#39;, []).&#10;  factory(&#39;notify&#39;, function($window) {&#10;    var msgs = [];&#10;    return function(msg) {&#10;      msgs.push(msg);&#10;      if (msgs.length == 3) {&#10;        $window.alert(msgs.join(&quot;\n&quot;));&#10;        msgs = [];&#10;      }&#10;    };&#10;  }).&#10;  controller(&#39;MyController&#39;, function($scope, notify) {&#10;    $scope.callNotify = function(msg) {&#10;      notify(msg);&#10;    };&#10;  });</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example106/index.html" name="example-example106"></iframe>
+  </div>
+</div>
+
+
+ge="js">
+      <pre><code>it(&#39;should test service&#39;, function() {&#10;  expect(element(by.id(&#39;simple&#39;)).element(by.model(&#39;message&#39;)).getAttribute(&#39;value&#39;))&#10;      .toEqual(&#39;test&#39;);&#10;});</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example105/index.html" name="example-example105"></iframe>
+  </div>
+</div>
+
+
+
+
+    <iframe class="runnable-example-frame" src="examples/example-example101/index.html" name="example-example101"></iframe>
+  </div>
+</div>
+
+
+^\-?\d+((\.|\,)\d+)?$/;&#10;app.directive(&#39;smartFloat&#39;, function() {&#10;  return {&#10;    require: &#39;ngModel&#39;,&#10;    link: function(scope, elm, attrs, ctrl) {&#10;      ctrl.$parsers.unshift(function(viewValue) {&#10;        if (FLOAT_REGEXP.test(viewValue)) {&#10;          ctrl.$setValidity(&#39;float&#39;, true);&#10;          return parseFloat(viewValue.replace(&#39;,&#39;, &#39;.&#39;));&#10;        } else {&#10;          ctrl.$setValidity(&#39;float&#39;, false);&#10;          return undefined;&#10;        }&#10;      });&#10;    }&#10;  };&#10;});</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example98/index.html" name="example-example98"></iframe>
+  </div>
+</div>
+
+
+uot;selected&quot; ng-transclude&gt;&#10;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example88/index.html" name="example-example88"></iframe>
+  </div>
+</div>
+
+
+e.inCurr&quot;&gt;&#10;      &lt;option ng-repeat=&quot;c in invoice.currencies&quot;&gt;{{c}}&lt;/option&gt;&#10;    &lt;/select&gt;&#10;  &lt;/div&gt;&#10;  &lt;div&gt;&#10;    &lt;b&gt;Total:&lt;/b&gt;&#10;    &lt;span ng-repeat=&quot;c in invoice.currencies&quot;&gt;&#10;      {{invoice.total(c) | currency:c}}&#10;    &lt;/span&gt;&#10;    &lt;button class=&quot;btn&quot; ng-click=&quot;invoice.pay()&quot;&gt;Pay&lt;/button&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-guide-concepts-3/index.html" name="example-guide-concepts-3"></iframe>
+  </div>
+</div>
+
+
+&quot;text&quot; style=&quot;width: 400px&quot; &gt;&#39;,&#10;     link: function(scope, element, attrs){&#10;       var input = element.children(&quot;input&quot;), delay;&#10;&#10;       input.on(&#39;keypress keyup keydown&#39;, function(event) {&#10;               delay = (!delay ? $timeout(fireUrlChange, 250) : null);&#10;               event.stopPropagation();&#10;             })&#10;            .val($browser.url());&#10;&#10;       $browser.url = function(url) {&#10;         return url ? input.val(url) : input.val();&#10;       };&#10;&#10;       function fireUrlChange() {&#10;         delay = null;&#10;         $browser.urlChange(input.val());&#10;       }&#10;     }&#10;   };&#10; });</code></pre>
+    </div>
+  
+    <div class="runnable-example-file" 
+      name="protractor.js"
+      type="protractor"
+      language="js">
+      <pre><code>var addressBar = element(by.css(&quot;#addressBar&quot;)),&#10;     url = &#39;http://www.example.com/base/index.html#!/path?a=b#h&#39;;&#10;&#10;it(&quot;should show fake browser info on load&quot;, function(){&#10;  expect(addressBar.getAttribute(&#39;value&#39;)).toBe(url);&#10;&#10;  expect(element(by.binding(&#39;$location.protocol&#39;)).getText()).toBe(&#39;http&#39;);&#10;  expect(element(by.binding(&#39;$location.host&#39;)).getText()).toBe(&#39;www.example.com&#39;);&#10;  expect(element(by.binding(&#39;$location.port&#39;)).getText()).toBe(&#39;80&#39;);&#10;  expect(element(by.binding(&#39;$location.path&#39;)).getText()).toBe(&#39;/path&#39;);&#10;  expect(element(by.binding(&#39;$location.search&#39;)).getText()).toBe(&#39;{&quot;a&quot;:&quot;b&quot;}&#39;);&#10;  expect(element(by.binding(&#39;$location.hash&#39;)).getText()).toBe(&#39;h&#39;);&#10;&#10;});&#10;&#10;it(&quot;should change $location accordingly&quot;, function(){&#10;  var navigation = element.all(by.css(&quot;#navigation a&quot;));&#10;&#10;  navigation.get(0).click();&#10;&#10;  expect(addressBar.getAttribute(&#39;value&#39;)).toBe(&quot;http://www.example.com/base/index.html#!/first?a=b&quot;);&#10;&#10;  expect(element(by.binding(&#39;$location.protocol&#39;)).getText()).toBe(&#39;http&#39;);&#10;  expect(element(by.binding(&#39;$location.host&#39;)).getText()).toBe(&#39;www.example.com&#39;);&#10;  expect(element(by.binding(&#39;$location.port&#39;)).getText()).toBe(&#39;80&#39;);&#10;  expect(element(by.binding(&#39;$location.path&#39;)).getText()).toBe(&#39;/first&#39;);&#10;  expect(element(by.binding(&#39;$location.search&#39;)).getText()).toBe(&#39;{&quot;a&quot;:&quot;b&quot;}&#39;);&#10;  expect(element(by.binding(&#39;$location.hash&#39;)).getText()).toBe(&#39;&#39;);&#10;&#10;&#10;  navigation.get(1).click();&#10;&#10;  expect(addressBar.getAttribute(&#39;value&#39;)).toBe(&quot;http://www.example.com/base/index.html#!/sec/ond?flag#hash&quot;);&#10;&#10;  expect(element(by.binding(&#39;$location.protocol&#39;)).getText()).toBe(&#39;http&#39;);&#10;  expect(element(by.binding(&#39;$location.host&#39;)).getText()).toBe(&#39;www.example.com&#39;);&#10;  expect(element(by.binding(&#39;$location.port&#39;)).getText()).toBe(&#39;80&#39;);&#10;  expect(element(by.binding(&#39;$location.path&#39;)).getText()).toBe(&#39;/sec/ond&#39;);&#10;  expect(element(by.binding(&#39;$location.search&#39;)).getText()).toBe(&#39;{&quot;flag&quot;:true}&#39;);&#10;  expect(element(by.binding(&#39;$location.hash&#39;)).getText()).toBe(&#39;hash&#39;);&#10;&#10;});</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-location-hashbang-mode/index.html" name="example-location-hashbang-mode"></iframe>
+  </div>
+</div>
+
+

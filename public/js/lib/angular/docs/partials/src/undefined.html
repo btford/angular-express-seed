@@ -1,0 +1,44 @@
+
+
+<div>
+  <a ng-click="openPlunkr('examples/example-multi-bootstrap')" class="btn pull-right">
+    <i class="glyphicon glyphicon-edit">&nbsp;</i>
+    Edit in Plunker</a>
+  <div class="runnable-example"
+      path="examples/example-multi-bootstrap"
+      name="multi-bootstrap"
+      module="multi-bootstrap">
+
+   
+    <div class="runnable-example-file" 
+      name="index.html"
+      language="html"
+      type="html">
+      <pre><code>&lt;script src=&quot;../../../angular.js&quot;&gt;&lt;/script&gt;&#10;&lt;div ng-controller=&quot;BrokenTable&quot;&gt;&#10;  &lt;table&gt;&#10;  &lt;tr&gt;&#10;    &lt;th ng-repeat=&quot;heading in headings&quot;&gt;{{heading}}&lt;/th&gt;&#10;  &lt;/tr&gt;&#10;  &lt;tr ng-repeat=&quot;filling in fillings&quot;&gt;&#10;    &lt;td ng-repeat=&quot;fill in filling&quot;&gt;{{fill}}&lt;/td&gt;&#10;  &lt;/tr&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;</code></pre>
+    </div>
+  
+    <div class="runnable-example-file" 
+      name="controller.js"
+      language="js"
+      type="js">
+      <pre><code>var app = angular.module(&#39;multi-bootstrap&#39;, [])&#10;&#10;.controller(&#39;BrokenTable&#39;, function($scope) {&#10;    $scope.headings = [&#39;One&#39;, &#39;Two&#39;, &#39;Three&#39;];&#10;    $scope.fillings = [[1, 2, 3], [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;], [7, 8, 9]];&#10;});</code></pre>
+    </div>
+  
+    <div class="runnable-example-file" 
+      name="protractor.js"
+      type="protractor"
+      language="js">
+      <pre><code>it(&#39;should only insert one table cell for each item in $scope.fillings&#39;, function() {&#10;expect(element.all(by.css(&#39;td&#39;)).count())&#10;    .toBe(9);&#10;});</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-multi-bootstrap/index.html" name="example-multi-bootstrap"></iframe>
+  </div>
+</div>
+
+
+ndex.html" name="example-example"></iframe>
+  </div>
+</div>
+
+
