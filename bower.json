@@ -1,0 +1,8 @@
+{
+  "name": "angular-express-seed",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular": "~1.2.23",
+    "angular-route": "~1.2.23"
+  }
+}
