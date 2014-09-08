@@ -1,8 +1,3 @@
-
-/**
- * Module dependencies
- */
-
 var express = require('express'),
   bodyParser = require('body-parser'),
   methodOverride = require('method-override'),
@@ -61,10 +56,28 @@ app.get('*', function(req, res, next) {
   res.render('index');
 });
 
-/**
- * Start Server
- */
+// error handlers
 
-http.createServer(app).listen(app.get('port'), function () {
-  console.log('Express server listening on port ' + app.get('port'));
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
+    });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message,
+        error: {}
+    });
 });
+
+module.exports = app;
