@@ -7,6 +7,7 @@ var express = require('express'),
     morgan = require('morgan'),
     http = require('http'),
     path = require('path');
+	lessMiddleware = require('less-middleware');
 
 /*** VARs ***/
 var app = express();
@@ -21,7 +22,8 @@ app.set('view engine', 'jade');
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(methodOverride());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(lessMiddleware(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + '/public')));
 app.use(errorHandler());
 
 
