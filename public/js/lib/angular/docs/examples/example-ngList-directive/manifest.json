@@ -1,7 +1,0 @@
-{
-  "name": "example-ngList-directive",
-  "files": [
-    "index-production.html",
-    "protractor.js"
-  ]
-}
