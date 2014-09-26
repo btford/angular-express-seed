@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "prestart": "npm install",
-    "start": "node app"
+    "start": "node bin/www"
   },
   "dependencies": {
     "body-parser": "^1.0.2",
