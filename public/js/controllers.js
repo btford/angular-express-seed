@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 /* Controllers */
 
@@ -14,14 +14,24 @@ angular.module('myApp.controllers', []).
     }).
     error(function (data, status, headers, config) {
       $scope.name = 'Error!';
-    });
+    })
 
   }).
-  controller('MyCtrl1', function ($scope) {
-    // write Ctrl here
+  controller('RegistrationCtrl', function ($scope,$http) {
+    // get the registrations
+    $http({
+        method: 'GET',
+        url: 'localhost:3000/getAll/Registrations'
+    }).
+    success(function(data,status,headers,config) {
+        $scope.registrations = data
+    })
+    .error(function(data,status,headers,config) {
+        $scope.registrations = [{Error: "Error in http call"}]
+    })
 
   }).
-  controller('MyCtrl2', function ($scope) {
+  controller('SensorCtrl', function ($scope) {
     // write Ctrl here
 
-  });
+  })
