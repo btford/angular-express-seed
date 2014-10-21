@@ -24,7 +24,7 @@
             $http({
                 method: 'GET',
                // url: 'http://localhost:3000/getAll/Registration'
-                url: 'http://localhost:3000/getByNodeId/Registration/4a3cd823-35d6-4335-9ae5-ddd3df8a1c2e'
+                url: 'http://localhost:3000/getAll/Registration'
             }).
                 success(function(data,status,headers,config) {
                     console.log("data == " + data)

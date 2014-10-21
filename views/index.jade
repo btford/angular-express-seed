@@ -2,7 +2,7 @@ extends layout
 
 block body
 	div(ng-controller='AppCtrl')
-		h2 Hello {{name}}
+		h2 {{name}}
 		ul.menu
 			li
 				a(href='view1') view1
@@ -16,7 +16,7 @@ block body
 			span(app-version)
 			ul.list-group
 				li.list-group-item(ng-repeat="item in registrations").
-					{{ item.data }}
+					{{ item }}
 
 	script(src='js/lib/angular/angular.min.js')
 	script(src='js/app.js')
