@@ -1,8 +1,10 @@
 extends layout
 
 block body
+
 	div(ng-controller='AppCtrl')
 		h2 {{name}}
+		h3 List of Registered Nodes
 		ul.menu
 			li
 				a(href='view1') view1
@@ -16,7 +18,12 @@ block body
 			span(app-version)
 			ul.list-group
 				li.list-group-item(ng-repeat="item in registrations").
-					{{ item }}
+					{{ item.data.message.node.nodeId }} -
+					{{ item.data.message.node.status }} -
+					{{ item.data.message.node.location.latitude }} -
+					{{ item.data.message.node.location.longitude }}
+
+
 
 	script(src='js/lib/angular/angular.min.js')
 	script(src='js/app.js')
