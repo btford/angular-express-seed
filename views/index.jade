@@ -2,26 +2,48 @@ extends layout
 
 block body
 	div(ng-controller='AppCtrl')
-		h2 Hello {{name}}
+		h2 {{name}}
+		h3 {{watable_data}}
+
 		ul.menu
 			li
 				a(href='view1') view1
 			li
 				a(href='view2') view2
 
+		script(type='javascript').
+			w6 = $('#thetable').WATable({
+				url: '/api/watable_data',
+				preFill: true,
+				debug: true
+			}).data('WATable')
+			$("body").on('click', '.export_checked', function (e) {
+				e.preventDefault()
+				var data = w6.getData(true)
+				console.log(data.rows.length + ' rows returned')
+				console.log(data)
+				alert(data.rows.length + ' rows returned.\nSee console for details.')
+			});
+
+
+
 		div(ng-view)
 
-		div(ng-controller='RegistrationCtrl')
-			| Angular seed app: v
-			span(app-version)
-			ul.list-group
-				li.list-group-item(ng-repeat="item in registrations").
-					{{ item.data }}
+		div#thetable
+
+
+	div(ng-controller='RegistrationCtrl')
+		| Angular seed app: v
+		span(app-version)
+		ul.list-group
+			li.list-group-item(ng-repeat="item in registrations").
+				{{ item.data }}
 
 	script(src='js/lib/angular/angular.min.js')
 	script(src='js/app.js')
 	script(src='js/lib/jquery/jquery.js')
 	script(src='js/lib/bootstrap/bootstrap.js')
+	script(src='js/lib/watable/jquery.watable.js')
 	script(src='js/services.js')
 	script(src='js/controllers.js')
 	script(src='js/filters.js')
