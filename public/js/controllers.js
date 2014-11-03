@@ -33,7 +33,7 @@
         }]).
         controller('RegistrationCtrl',['$scope','$http',function ($scope,$http) {
             // get the registrations
-            $scope.registrations = []
+            $scope.registrations = [{data:"Here I IS"}]
 /*
             $http({
                 method: 'GET',

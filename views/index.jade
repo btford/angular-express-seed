@@ -1,9 +1,34 @@
 extends layout
 
+block head
+	script.
+		alert('in the head section')
+
 block body
+	script.
+		alert('HERE I AM at the start of block body')
+
+	- if(1==1)
+		alert('inside the hyphen')
+
+	script.
+		function justDoIt(txt) {
+			alert(txt)
+
+			var w6 = jQuery('#thetable').WATable({
+				url: '/api/watable_data',
+				preFill: true,
+				debug: true
+			}).data('WATable')
+			return w6
+		}
+
 	div(ng-controller='AppCtrl')
 		h2 {{name}}
 		h3 {{watable_data}}
+
+		//script.
+			justDoIt("in the div")
 
 		ul.menu
 			li
@@ -11,25 +36,23 @@ block body
 			li
 				a(href='view2') view2
 
-		script(type='javascript').
-			w6 = $('#thetable').WATable({
-				url: '/api/watable_data',
-				preFill: true,
-				debug: true
-			}).data('WATable')
-			$("body").on('click', '.export_checked', function (e) {
-				e.preventDefault()
-				var data = w6.getData(true)
-				console.log(data.rows.length + ' rows returned')
-				console.log(data)
-				alert(data.rows.length + ' rows returned.\nSee console for details.')
-			});
-
-
+		input.doit(type='checkbox')
 
 		div(ng-view)
 
 		div#thetable
+			script.
+				jQuery('.doit').on('click', function (e) {
+					console.log('e event = ' + e.name)
+					e.preventDefault()
+					var w6 = justDoIt("in .doit")
+					var data = w6.getData()
+					//console.log(data.rows.length + ' rows returned')
+					console.log(data)
+					//alert(data.rows.length + ' rows returned.\nSee console for details.')
+					//alert('in .doit')
+				})
+
 
 
 	div(ng-controller='RegistrationCtrl')
@@ -39,12 +62,3 @@ block body
 			li.list-group-item(ng-repeat="item in registrations").
 				{{ item.data }}
 
-	script(src='js/lib/angular/angular.min.js')
-	script(src='js/app.js')
-	script(src='js/lib/jquery/jquery.js')
-	script(src='js/lib/bootstrap/bootstrap.js')
-	script(src='js/lib/watable/jquery.watable.js')
-	script(src='js/services.js')
-	script(src='js/controllers.js')
-	script(src='js/filters.js')
-	script(src='js/directives.js')
