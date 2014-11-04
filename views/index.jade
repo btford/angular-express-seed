@@ -15,12 +15,13 @@ block body
 		function justDoIt(txt) {
 			alert(txt)
 
-			var w6 = jQuery('#thetable').WATable({
+			jQuery('#thetable').WATable({
 				url: '/api/watable_data',
 				preFill: true,
-				debug: true
-			}).data('WATable')
-			return w6
+				debug: true,
+				filter: true
+			})
+			//return w6
 		}
 
 	div(ng-controller='AppCtrl')
@@ -43,12 +44,17 @@ block body
 		div#thetable
 			script.
 				jQuery('.doit').on('click', function (e) {
-					console.log('e event = ' + e.name)
+					console.log('e event = ' + e)
 					e.preventDefault()
-					var w6 = justDoIt("in .doit")
-					var data = w6.getData()
+					justDoIt("in .doit")
+					//console.log('w6 = ' + w6)
+					//var data = w6.getData()
 					//console.log(data.rows.length + ' rows returned')
-					console.log(data)
+					//if(data !== undefined) {
+					//	console.log(data)
+					//} else {
+					//	console.log("data is undefined")
+					//}
 					//alert(data.rows.length + ' rows returned.\nSee console for details.')
 					//alert('in .doit')
 				})

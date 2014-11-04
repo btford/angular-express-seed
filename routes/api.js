@@ -4,7 +4,6 @@
 
 exports.watable_data = function(req,res) {
   res.json({
-    watable_data: {
           cols: {
             userId: {
               index: 1,
@@ -25,8 +24,7 @@ exports.watable_data = function(req,res) {
               name: "Superman"
             }
           ]
-        }
-  })
+    })
 }
 
 exports.name = function (req, res) {
