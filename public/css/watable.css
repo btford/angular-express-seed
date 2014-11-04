@@ -1,0 +1,115 @@
+.watable * {
+  white-space: nowrap;
+  font-size: 12px !important;
+}
+
+.watable.table {
+  width: auto;
+}
+
+.watable p {
+  margin: 0;
+}
+
+.watable th,
+.watable td {
+  border-width: 1px !important;
+}
+
+.watable .glyphicon {
+  margin: 0 0 0 2px;
+  opacity: 0.5;
+}
+
+.watable span.filter {
+  background-color: #999;
+}
+
+.watable .indeterminate {
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+
+.watable .columnpicker li,
+.watable .actions li {
+  padding-left: 5px;
+}
+
+.watable .btn-toolbar {
+  margin-bottom: -5px;
+}
+
+.watable .pagination {
+  margin: 0;
+}
+
+.watable input[type=checkbox] {
+  margin: 0;
+  padding: 0;
+}
+
+.watable input[type=text].filter {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  width: 80px;
+  float: left;
+  background-color: transparent;
+}
+
+.watable .date-wrap {
+  width: 100%;
+  min-width: 115px;
+}
+
+.watable .dateWrap .add-on {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+
+.watable .dropdown-menu {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.watable .actions a {
+  padding: 0;
+  margin: 0;
+}
+
+/* Only for demo purposes */
+.watable div.green {
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,140,37,0.38) 38%, rgba(0,140,37,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(38%,rgba(0,140,37,0.38)), color-stop(100%,rgba(0,140,37,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,140,37,0.38) 38%,rgba(0,140,37,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,140,37,0.38) 38%,rgba(0,140,37,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,140,37,0.38) 38%,rgba(0,140,37,1) 100%); /* IE10+ */
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(0,140,37,0.38) 38%,rgba(0,140,37,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#008c25',GradientType=1 ); /* IE6-9 */
+}
+
+.watable div.yellow {
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(188,179,0,0.38) 38%, rgba(188,179,0,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(38%,rgba(188,179,0,0.38)), color-stop(100%,rgba(188,179,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(188,179,0,0.38) 38%,rgba(188,179,0,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(188,179,0,0.38) 38%,rgba(188,179,0,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(188,179,0,0.38) 38%,rgba(188,179,0,1) 100%); /* IE10+ */
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(188,179,0,0.38) 38%,rgba(188,179,0,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#bcb300',GradientType=1 ); /* IE6-9 */
+}
+
+.watable div.red {
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(147,22,0,0.38) 38%, rgba(147,22,0,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(38%,rgba(147,22,0,0.38)), color-stop(100%,rgba(147,22,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(147,22,0,0.38) 38%,rgba(147,22,0,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(147,22,0,0.38) 38%,rgba(147,22,0,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(147,22,0,0.38) 38%,rgba(147,22,0,1) 100%); /* IE10+ */
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(147,22,0,0.38) 38%,rgba(147,22,0,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#931600',GradientType=1 ); /* IE6-9 */
+}
