@@ -23,8 +23,8 @@
                 url: '/api/watable_data'
             }).
                 success(function (data, status, headers, config) {
-                    $scope.watable_data = data.watable_data
-                    console.log("data.watable_data = " + JSON.stringify(data.watable_data))
+                    $scope.watable_data = data
+                    console.log("data = " + JSON.stringify(data))
                 }).
                 error(function (data, status, headers, config) {
                     $scope.watable_data = 'Error!';
