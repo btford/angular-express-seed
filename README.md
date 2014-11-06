@@ -3,7 +3,8 @@
 Usage:
 
     clone the repo
-    npm install from cloned local directory
+    cd <install dir>
+    npm install
     make sure the server is running
     nodemon app
     navigate to localhost:8000
