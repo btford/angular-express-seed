@@ -1,34 +1,30 @@
 extends layout
 
 block head
-	script.
+	//script.
 		alert('in the head section')
 
 block body
-	script.
+	//script.
 		alert('HERE I AM at the start of block body')
 
-	- if(1==1)
+	//- if(1==1)
 		alert('inside the hyphen')
 
-	script.
-		function justDoIt(txt) {
-			alert(txt)
-
-			jQuery('#thetable').WATable({
-				url: '/api/watable_data',
-				preFill: true,
-				debug: true,
-				filter: true
-			})
-			//return w6
-		}
+	//script.
+	//	function justDoIt(txt) {
+	//		//alert(txt)
+	//
+	//		return jQuery('#thetable').WATable({
+	//			//url: '/api/watable_data',
+	//			preFill: true,
+	//			debug: true,
+	//			filter: true
+	//		})
+	//	}
 
 	div(ng-controller='AppCtrl')
 		h2 {{name}}
-
-		//script.
-			justDoIt("in the div")
 
 		ul.menu
 			li
@@ -36,34 +32,28 @@ block body
 			li
 				a(href='view2') view2
 
-		input.doit(type='checkbox')
+		//input.doit(type='checkbox')
 
 		div(ng-view)
-
-		div#thetable
-			script.
-				jQuery('.doit').on('click', function (e) {
-					console.log('e event = ' + e)
-					e.preventDefault()
-					justDoIt("in .doit")
-					//console.log('w6 = ' + w6)
-					//var data = w6.getData()
-					//console.log(data.rows.length + ' rows returned')
-					//if(data !== undefined) {
-					//	console.log(data)
-					//} else {
-					//	console.log("data is undefined")
-					//}
-					//alert(data.rows.length + ' rows returned.\nSee console for details.')
-					//alert('in .doit')
-				})
-
-
 
 	div(ng-controller='RegistrationCtrl')
 		| Angular seed app: v
 		span(app-version)
-		ul.list-group
-			li.list-group-item(ng-repeat="item in registrations").
-				{{ item.data }}
+		p
+			a(ng-click='loadRegs()') List View
+
+		//div#thetable
+		//	script.
+		//		jQuery('.doit').on('click', function (e) {
+		//			console.log('e event = ' + e)
+		//			e.preventDefault()
+		//			//var tbl = justDoIt("in .doit")
+		//
+		//		})
+
+		div#thetable
+
+		//ul.list-group
+		//	li.list-group-item(ng-repeat="item in registrations").
+		//		{{ item.data }}
 
