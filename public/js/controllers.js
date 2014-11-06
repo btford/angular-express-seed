@@ -12,7 +12,6 @@
             }).
                 success(function (data, status, headers, config) {
                     $scope.name = data.name;
-                    //console.log("d = " + $scope.name)
                 }).
                 error(function (data, status, headers, config) {
                     $scope.name = 'Error!';
