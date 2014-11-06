@@ -45,24 +45,28 @@
                         console.log(data)
                         $scope.tableData = {cols:{},rows:[]}
                         $scope.tableData.cols = {
-                            nodeId: {index:1,type:"string"},
-                            status: {index:2,type:"string"},
-                            latitude:{index:3,type:"number"},
-                            longitude: {index:4,type:"number"}
+                            NodeId: {index:1,type:"string"},
+                            Status: {index:2,type:"string"},
+                            Latitude:{index:3,type:"number"},
+                            Longitude: {index:4,type:"number"},
+                            OriginTimestamp: {index:5,type:"string"},
+                            Updated: {index:5,type:"string"}
                         }
 
                         var d = data
                         for(var i=0; i<50; i++) {
                             var row = {}
-                            row['nodeId'] = d[i].data.message.node.nodeId
-                            row['status'] = d[i].data.message.node.status
-                            row['latitude'] = d[i].data.message.node.location.latitude
-                            row['longitude'] = d[i].data.message.node.location.longitude
+                            row['NodeId'] = d[i].data.message.node.nodeId
+                            row['Status'] = d[i].data.message.node.status
+                            row['Latitude'] = d[i].data.message.node.location.latitude
+                            row['Longitude'] = d[i].data.message.node.location.longitude
+                            row['OriginTimestamp'] = d[i].data.message.originTimestamp
+                            row['Updated'] = d[i].data.message.updated
                             $scope.tableData.rows.push(row)
                         }
                         var tbl = jQuery('#thetable').WATable({
                     			preFill: false,
-                    			debug: true,
+                    			//debug: true,
                     			filter: true
                     		}).data('WATable')
                         tbl.setData($scope.tableData)
