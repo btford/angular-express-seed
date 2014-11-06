@@ -1,59 +1,17 @@
 extends layout
 
-block head
-	//script.
-		alert('in the head section')
-
 block body
-	//script.
-		alert('HERE I AM at the start of block body')
-
-	//- if(1==1)
-		alert('inside the hyphen')
-
-	//script.
-	//	function justDoIt(txt) {
-	//		//alert(txt)
-	//
-	//		return jQuery('#thetable').WATable({
-	//			//url: '/api/watable_data',
-	//			preFill: true,
-	//			debug: true,
-	//			filter: true
-	//		})
-	//	}
 
 	div(ng-controller='AppCtrl')
 		h2 {{name}}
 
-		ul.menu
-			li
-				a(href='view1') view1
-			li
-				a(href='view2') view2
-
-		//input.doit(type='checkbox')
-
-		div(ng-view)
+		//div(ng-view)
 
 	div(ng-controller='RegistrationCtrl')
-		| Angular seed app: v
-		span(app-version)
-		p
-			a(ng-click='loadRegs()') List View
+		ul.menu
+			li
+				a(ng-click='loadRegs()') List View
 
-		//div#thetable
-		//	script.
-		//		jQuery('.doit').on('click', function (e) {
-		//			console.log('e event = ' + e)
-		//			e.preventDefault()
-		//			//var tbl = justDoIt("in .doit")
-		//
-		//		})
 
 		div#thetable
-
-		//ul.list-group
-		//	li.list-group-item(ng-repeat="item in registrations").
-		//		{{ item.data }}
 
