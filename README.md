@@ -1,3 +1,14 @@
+#How to use Nodes-Talking-Admin
+------------------------------------------------
+Usage:
+
+    clone the repo
+    npm install from cloned local directory
+    make sure the server is running
+    nodemon app
+
+------------------------------------------------
+
 # Angular Express Seed
 
 Start an awesome app with AngularJS on the front, Express + Node on the back. This project is an
