@@ -6,6 +6,7 @@ Usage:
     npm install from cloned local directory
     make sure the server is running
     nodemon app
+    navigate to localhost:8000
 
 ------------------------------------------------
 
