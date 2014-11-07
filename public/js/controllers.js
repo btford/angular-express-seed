@@ -72,7 +72,7 @@
                     			filter:     true,
                                 rowClicked: function(data) {
                                     alert(JSON.stringify(data.row))
-                                    alert(JSON.stringify(data.column))
+                                    //alert(JSON.stringify(data.column))
                                 }
                     	}).data('WATable').setData($scope.tableData)
 

@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap": "*",
     "jquery": "*",
-    "angular" : "*"
+    "angular" : "*",
+    "angular-route": "*"
   }
 }

@@ -10,16 +10,16 @@
     ]).
         config(function ($routeProvider, $locationProvider) {
             $routeProvider.
-                when('/view1', {
-                    templateUrl: 'partials/partial1',
+                when('/nodes-list', {
+                    templateUrl: 'partials/nodes-list',
                     controller: 'AppCtrl'
                 }).
-                when('/view2', {
-                    templateUrl: 'partials/partial2',
+                when('/node-detail', {
+                    templateUrl: 'partials/node-detail',
                     controller: 'AppCtrl'
                 }).
                 otherwise({
-                    redirectTo: '/view1'
+                    redirectTo: '/nodes-list'
                 })
 
             $locationProvider.html5Mode(true)
