@@ -47,7 +47,7 @@ if (env === 'production') {
  */
 
 // serve index and view partials
-app.get('/', routes.index)
+//app.get('/', routes.index)
 app.get('/partials/:name', routes.partials)
 
 // JSON API

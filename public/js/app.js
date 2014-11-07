@@ -12,14 +12,14 @@
             $routeProvider.
                 when('/nodes-list', {
                     templateUrl: 'partials/nodes-list',
-                    controller: 'AppCtrl'
+                    controller: 'RegistrationCtrl'
                 }).
                 when('/node-detail', {
                     templateUrl: 'partials/node-detail',
-                    controller: 'AppCtrl'
+                    controller: 'RegistrationCtrl'
                 }).
                 otherwise({
-                    redirectTo: '/nodes-list'
+                    redirectTo: '/partials/nodes-list'
                 })
 
             $locationProvider.html5Mode(true)
