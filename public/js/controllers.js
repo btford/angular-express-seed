@@ -42,30 +42,38 @@
                         console.log(data)
                         $scope.tableData = {cols:{},rows:[]}
                         $scope.tableData.cols = {
-                            NodeId: {index:1,type:"string"},
-                            Status: {index:2,type:"string"},
-                            Latitude:{index:3,type:"number"},
-                            Longitude: {index:4,type:"number"},
-                            OriginTimestamp: {index:5,type:"string"},
-                            Updated: {index:6,type:"string"}
+                            NodeId:             {index:1,type:"string",unique:true},
+                            Description:        {index:2,type:"string"},
+                            Status:             {index:3,type:"string",tooltip:"the status of the node"},
+                            Latitude:           {index:4,type:"number"},
+                            Longitude:          {index:5,type:"number"},
+                            Altitude:           {index:6,type:"number"},
+                            OriginTimestamp:    {index:7,type:"string"},
+                            Updated:            {index:8,type:"string"}
                         }
 
                         var d = data
                         for(var i=0; i<50; i++) {
                             var row = {}
                             row['NodeId']           = d[i].data.message.node.nodeId
+                            row['Description']      = d[i].data.message.node.description
                             row['Status']           = d[i].data.message.node.status
                             row['Latitude']         = d[i].data.message.node.location.latitude
                             row['Longitude']        = d[i].data.message.node.location.longitude
+                            row['Altitude']         = d[i].data.message.node.location.altitude
                             row['OriginTimestamp']  = d[i].data.message.originTimestamp
                             row['Updated']          = d[i].data.message.updated
 
                             $scope.tableData.rows.push(row)
                         }
                         jQuery('#thetable').html("").WATable({
-                    			preFill: false,
-                    			debug: true,
-                    			filter: true
+                    			preFill:    false,
+                    			debug:      true,
+                    			filter:     true,
+                                rowClicked: function(data) {
+                                    alert(JSON.stringify(data.row))
+                                    alert(JSON.stringify(data.column))
+                                }
                     	}).data('WATable').setData($scope.tableData)
 
                     }).error(function(data,status,headers,config) {
