@@ -71,8 +71,7 @@
                     			debug:      true,
                     			filter:     true,
                                 rowClicked: function(data) {
-                                    alert(JSON.stringify(data.row))
-                                    //alert(JSON.stringify(data.column))
+                                    $scope.displayDetail(data)
                                 }
                     	}).data('WATable').setData($scope.tableData)
 
@@ -80,6 +79,13 @@
                         $scope.registrations = [{Error: "Error in http call"}]
                     })
             }
+            $scope.displayDetail = function(data) {
+                //TODO flesh out what it takes to get the necessary info to the node-detail page
+                alert(JSON.stringify(data.row))
+            }
+
+            //execute the loading of the registrations
+            $scope.loadRegs()
 
         }]).
         controller('SensorCtrl', function ($scope) {
