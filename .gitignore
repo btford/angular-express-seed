@@ -30,3 +30,4 @@ hs_err_pid*
 
 #node items
 /node_modules
+/bower_components
