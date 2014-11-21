@@ -14,7 +14,8 @@ var express = require('express'),
   http = require('http'),
   path = require('path'),
   LocalStrategy = require('passport-local').Strategy,
-  flash = require('connect-flash')
+  flash = require('connect-flash'),
+  session = require('express-session')
 
 
 
@@ -101,6 +102,7 @@ app.set('view engine', 'jade')
 app.use(bodyParser())
 app.use(methodOverride())
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(session({ secret: 'imalittleteapot' }))
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(flash())
@@ -127,6 +129,7 @@ app.get('/', ensureAuthenticated, routes.index)
 app.get('/partials/:name', routes.partials)
 app.get('/login', function(req, res){
     console.log('should login')
+    res.render('login')
 })
 
 // JSON API
@@ -134,9 +137,10 @@ app.get('/api/name', api.name)
 app.get('/api/watable_data',api.watable_data)
 
 // redirect all others to the index (HTML5 history)
-app.get('*', function(req, res){
+app.get('*', ensureAuthenticated, function(req, res){
     console.log('default called, should login')
-    res.redirect('/login')
+
+    res
 })
 
 
