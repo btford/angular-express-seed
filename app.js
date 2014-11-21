@@ -98,7 +98,7 @@ var app = module.exports = express()
 app.set('port', process.env.PORT || 8000)
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jade')
-//app.use(morgan('dev'))
+app.use(morgan('dev'))
 app.use(bodyParser())
 app.use(methodOverride())
 app.use(express.static(path.join(__dirname, 'public')))
@@ -127,9 +127,15 @@ if (env === 'production') {
 // serve index and view partials
 app.get('/', ensureAuthenticated, routes.index)
 app.get('/partials/:name', routes.partials)
+
+// login stuff
 app.get('/login', function(req, res){
     console.log('should login')
     res.render('login')
+})
+app.post('/login', passport.authenticate('local', { failureRedirect: '/login', failureFlash: true }), function(req, res) {
+    // this happens on success
+    res.redirect('/')
 })
 
 // JSON API
@@ -137,11 +143,7 @@ app.get('/api/name', api.name)
 app.get('/api/watable_data',api.watable_data)
 
 // redirect all others to the index (HTML5 history)
-app.get('*', ensureAuthenticated, function(req, res){
-    console.log('default called, should login')
-
-    res
-})
+app.get('*', ensureAuthenticated, routes.index)
 
 
 /**
