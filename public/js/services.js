@@ -8,6 +8,7 @@
 (function() {
     angular.module('myApp.services', []).
         value('version', '0.1')
+    // return user info and permissions
     angular.module.factory('userInfoSvc', ['$http', function($http){
         var userInfoSvc = {
             getUserName : function(){
