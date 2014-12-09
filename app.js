@@ -139,6 +139,7 @@ app.post('/login', passport.authenticate('local', { failureRedirect: '/login', f
 })
 
 // JSON API
+//TODO: decide if the API should be protected to, and under what circumstances.
 app.get('/api/name', api.name)
 app.get('/api/watable_data',api.watable_data)
 
