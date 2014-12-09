@@ -77,6 +77,14 @@
                     }).error(function(data,status,headers,config) {
                         $scope.registrations = [{Error: "Error in http call"}]
                     })
+
+                $http({
+                    method: 'GET',
+                    url: '/api/userinfo'
+                }).
+                    success(function(data){
+                        console.log(' call from /api/userinfo', data)
+                    })
             }
             $scope.displayDetail = function(data) {
                 //TODO flesh out what it takes to get the necessary info to the node-detail page

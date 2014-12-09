@@ -126,7 +126,7 @@ if (env === 'production') {
 
 // serve index and view partials
 app.get('/', ensureAuthenticated, routes.index)
-app.get('/partials/:name', routes.partials)
+app.get('/partials/:name', ensureAuthenticated, routes.partials)
 
 // login stuff
 app.get('/login', function(req, res){
@@ -141,6 +141,9 @@ app.post('/login', passport.authenticate('local', { failureRedirect: '/login', f
 // JSON API
 app.get('/api/name', api.name)
 app.get('/api/watable_data',api.watable_data)
+app.get('/api/userinfo', ensureAuthenticated, function(req, res){
+    res.send(req.user)
+})
 
 // redirect all others to the index (HTML5 history)
 app.get('*', ensureAuthenticated, routes.index)
