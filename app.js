@@ -84,10 +84,7 @@ passport.use(new LocalStrategy(
     }
 ));
 
-function ensureAuthenticated(req, res, next) {
-    if (req.isAuthenticated()) { return next(); }
-    res.redirect('/login')
-}
+
 var app = module.exports = express()
 
 /**
@@ -125,8 +122,11 @@ if (env === 'production') {
  */
 
 // serve index and view partials
-app.get('/', ensureAuthenticated, routes.index)
-app.get('/partials/:name', ensureAuthenticated, routes.partials)
+app.get('/', routes.ensureAuthenticated, routes.index)
+app.get('/partials/:name', routes.ensureAuthenticated, routes.partials)
+// I don't know where to put this.
+app.get('/api/userinfo', routes.ensureAuthenticated, routes.userinfo)
+
 
 // login stuff
 app.get('/login', function(req, res){
@@ -141,12 +141,10 @@ app.post('/login', passport.authenticate('local', { failureRedirect: '/login', f
 // JSON API
 app.get('/api/name', api.name)
 app.get('/api/watable_data',api.watable_data)
-app.get('/api/userinfo', ensureAuthenticated, function(req, res){
-    res.send(req.user)
-})
+
 
 // redirect all others to the index (HTML5 history)
-app.get('*', ensureAuthenticated, routes.index)
+app.get('*', routes.ensureAuthenticated, routes.index)
 
 
 /**
