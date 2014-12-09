@@ -8,7 +8,7 @@
 (function() {
     angular.module('myApp.services', []).
         value('version', '0.1')
-    angular.module.factory('userInfoSvc', ['', function(){
+    angular.module.factory('userInfoSvc', ['$http', function($http){
         var userInfoSvc = {
             getUserName : function(){
                 console.log('returning username infoz')
