@@ -13,6 +13,7 @@ var express = require('express'),
   api = require('./routes/api'),
   http = require('http'),
   path = require('path'),
+  // the requires for passport
   LocalStrategy = require('passport-local').Strategy,
   flash = require('connect-flash'),
   session = require('express-session')
@@ -99,6 +100,7 @@ app.use(morgan('dev'))
 app.use(bodyParser())
 app.use(methodOverride())
 app.use(express.static(path.join(__dirname, 'public')))
+// session and setup for passport
 app.use(session({ secret: 'imalittleteapot' }))
 app.use(passport.initialize())
 app.use(passport.session())
