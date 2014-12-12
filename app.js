@@ -134,7 +134,7 @@ app.get('/api/userinfo', routes.ensureAuthenticated, routes.userinfo)
 
 // login stuff
 app.get('/login', function(req, res){
-    console.log('should login')
+
     res.render('login')
 })
 app.post('/login', passport.authenticate('local', { failureRedirect: '/login', failureFlash: true }), function(req, res) {
