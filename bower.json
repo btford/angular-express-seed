@@ -19,6 +19,9 @@
   "dependencies": {
     "bootstrap": "*",
     "jquery": "*",
-    "angular" : "*"
+    "angular" : "*",
+    "bcryptjs" : "*"
+
+
   }
 }

@@ -16,7 +16,8 @@
     "passport-local" : "1.0.0",
     "connect-flash" : "0.1.1",
     "express-session" : "1.9.1",
-    "mongoskin"     : "1.4.1"
+    "mongoskin"     : "1.4.1",
+    "bcrypt" : "latest"
   },
   "scripts": {
       "start" : "node app.js"
