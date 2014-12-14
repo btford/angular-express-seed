@@ -78,14 +78,13 @@
                         $scope.registrations = [{Error: "Error in http call"}]
                     })
 
-                    userInfoSvc.getUserName()
+                    $scope.userInfo = userInfoSvc.getUserName()
+                    // userinfo.username
+                    // userinfo.email
 
                     // this would be how we get the user info and perms. this belongs in a service.
                     //TODO: there is a bug here somewhere, this is getting called twice
-                    $http.get('/api/userinfo')
-                        .success(function(data){
-                            console.log(' call from /api/userinfo', data)
-                        })
+
             }
             $scope.displayDetail = function(data) {
                 //TODO flesh out what it takes to get the necessary info to the node-detail page

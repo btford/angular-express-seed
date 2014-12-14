@@ -17,15 +17,14 @@ var express = require('express'),
   LocalStrategy = require('passport-local').Strategy,
   flash = require('connect-flash'),
   session = require('express-session'),
+  bcrypt = require('bcrypt'),
+  sift = require('sift')
   //mongoskin
-  mongo           = require('mongoskin'),
+  mongo = require('mongoskin'),
   db = mongo.db("mongodb://localhost/registration", {safe : true})
 
-
-var users = [
-    { id: 1, username: 'bob', password: 'secret', email: 'bob@example.com' }
-    , { id: 2, username: 'joe', password: 'birthday', email: 'joe@example.com' }
-];
+// for passport session management
+var users = []
 
 function findById(id, fn) {
     var idx = id - 1;
@@ -36,15 +35,7 @@ function findById(id, fn) {
     }
 }
 
-function findByUsername(username, fn) {
-    for (var i = 0, len = users.length; i < len; i++) {
-        var user = users[i];
-        if (user.username === username) {
-            return fn(null, user);
-        }
-    }
-    return fn(null, null);
-}
+
 
 
 // Passport session setup.
@@ -54,13 +45,17 @@ function findByUsername(username, fn) {
 //   the user by ID when deserializing.
 passport.serializeUser(function(user, done) {
     done(null, user.id);
-});
+})
 
 passport.deserializeUser(function(id, done) {
-    findById(id, function (err, user) {
-        done(err, user);
-    });
-});
+    var returnedUserObject = sift({'id' : id}, users)
+    if(returnedUserObject.length === 1){
+        return done(null, returnedUserObject)
+    } else {
+        console.log(users)
+        return done(new Error('user does not exist for id:', id))
+    }
+})
 
 
 // Use the LocalStrategy within Passport.
@@ -77,15 +72,30 @@ passport.use(new LocalStrategy(
             // username, or the password is not correct, set the user to `false` to
             // indicate failure and set a flash message.  Otherwise, return the
             // authenticated `user`.
-            findByUsername(username, function(err, user) {
-                if (err) { return done(err); }
-                if (!user) { return done(null, false, { message: 'Unknown user ' + username }); }
-                if (user.password != password) { return done(null, false, { message: 'Invalid password' }); }
-                return done(null, user);
+            db.collection('users').findOne({'userName' : username}, function(err, userObject){
+                if(err){
+                    return done(err)
+                }
+                if(userObject){
+
+                    if(bcrypt.compareSync(password, userObject.password)){
+
+                        // for passport sessions
+                        userObject.id = userObject._id
+                        users.push(userObject)
+                        return done(null, userObject)
+                    } else {
+                        return done(null, false, { message: 'Invalid Password'})
+                    }
+
+                } else {
+                    return(done(null, false, {message : 'Unknown user ' + username}))
+                }
             })
-        });
+
+        })
     }
-));
+))
 
 
 var app = module.exports = express()
