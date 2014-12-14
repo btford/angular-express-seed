@@ -16,6 +16,7 @@ exports.partials = function (req, res) {
 
 exports.userinfo = function(req, res){
     // this sends off the user object that we've returned from db.
+    console.log('sending user info: ', req.user)
     res.send(req.user)
 }
 

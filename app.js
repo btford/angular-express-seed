@@ -26,18 +26,6 @@ var express = require('express'),
 // for passport session management
 var users = []
 
-function findById(id, fn) {
-    var idx = id - 1;
-    if (users[idx]) {
-        fn(null, users[idx]);
-    } else {
-        fn(new Error('User ' + id + ' does not exist'));
-    }
-}
-
-
-
-
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,
@@ -52,7 +40,6 @@ passport.deserializeUser(function(id, done) {
     if(returnedUserObject.length === 1){
         return done(null, returnedUserObject)
     } else {
-        console.log(users)
         return done(new Error('user does not exist for id:', id))
     }
 })

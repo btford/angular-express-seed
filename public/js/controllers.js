@@ -81,6 +81,7 @@
                     $scope.userInfo = userInfoSvc.getUserName()
                     // userinfo.username
                     // userinfo.email
+                    console.log('userinfo: ', $scope.userInfo)
 
                     // this would be how we get the user info and perms. this belongs in a service.
                     //TODO: there is a bug here somewhere, this is getting called twice
