@@ -163,6 +163,6 @@ app.get('*', routes.ensureAuthenticated, routes.index)
 
 //TODO: this needs to be worked out, ALL connections should move to secure, including in angular
 //https.createServer(options, app).listen(app.get('port'), function () {
-http.createServer(options, app).listen(app.get('port'), function () {
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'))
 })
