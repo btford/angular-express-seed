@@ -12,16 +12,23 @@ var express = require('express'),
   routes = require('./routes'),
   api = require('./routes/api'),
   http = require('http'),
+  https = require('https'),
   path = require('path'),
   // the requires for passport
   LocalStrategy = require('passport-local').Strategy,
   flash = require('connect-flash'),
   session = require('express-session'),
   bcrypt = require('bcrypt'),
-  sift = require('sift')
+  sift = require('sift'),
+  fs = require('fs')
   //mongoskin
   mongo = require('mongoskin'),
   db = mongo.db("mongodb://localhost/registration", {safe : true})
+
+var options = {
+    key : fs.readFileSync('./ssl/privatekey'),
+    cert : fs.readFileSync('./ssl/certificate')
+}
 
 // for passport session management
 var users = []
@@ -153,6 +160,9 @@ app.get('*', routes.ensureAuthenticated, routes.index)
  * Start Server
  */
 
-http.createServer(app).listen(app.get('port'), function () {
+
+//TODO: this needs to be worked out, ALL connections should move to secure, including in angular
+//https.createServer(options, app).listen(app.get('port'), function () {
+http.createServer(options, app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'))
 })
