@@ -18,7 +18,8 @@ var express = require('express'),
   LocalStrategy = require('passport-local').Strategy,
   flash = require('connect-flash'),
   session = require('express-session'),
-  bcrypt = require('bcrypt'),
+  // can't get this to compile on windows
+  //bcrypt = require('bcrypt'),
   sift = require('sift'),
   fs = require('fs')
   //mongoskin

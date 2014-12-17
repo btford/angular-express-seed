@@ -17,7 +17,8 @@
     "connect-flash" : "0.1.1",
     "express-session" : "1.9.1",
     "mongoskin"     : "1.4.1",
-    "bcrypt" : "latest",
+    // wont compile in windows
+    //"bcrypt" : "latest",
     "sift" : "0.1.0"
   },
   "scripts": {
