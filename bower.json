@@ -1,0 +1,27 @@
+{
+  "name": "NodesTalkingAdmin",
+  "version": "0.1",
+  "homepage": "https://github.com/rsiewert/angular-express-seed",
+  "authors": [
+    "Contributors of Nodes-Talking"
+  ],
+  "description": "Administration App for Nodes-Talking Project",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "*",
+    "jquery": "*",
+    "angular" : "*",
+    "bcryptjs" : "*"
+
+
+  }
+}

@@ -1,0 +1,33 @@
+#Ignore class files
+*.class
+*.classpath
+
+#Ignore some generated directories
+gen/
+out/
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Eclipse related
+.metadata/
+.project/
+
+#intelliJ related
+*.iml
+.idea
+
+#property files
+common/build.properties
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#node items
+/node_modules
+/bower_components

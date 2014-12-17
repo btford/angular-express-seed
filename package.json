@@ -4,10 +4,23 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.0.2",
-    "error-handler": "^0.1.4",
-    "express": "~4.1.1",
+    "errorhandler": "*",
+    "express": "~3.5.1",
+    "connect": "*",
     "jade": "~0.31.2",
     "method-override": "^1.0.0",
-    "morgan": "^1.0.0"
+    "morgan": "^1.0.0",
+    "bower" : "*",
+    "nodemon": "*",
+    "passport": "~0.2.1",
+    "passport-local" : "1.0.0",
+    "connect-flash" : "0.1.1",
+    "express-session" : "1.9.1",
+    "mongoskin"     : "1.4.1",
+    "bcryptjs" : "2.1.0",
+    "sift" : "0.1.0"
+  },
+  "scripts": {
+      "start" : "node app.js"
   }
 }

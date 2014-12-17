@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        meta(charset='utf8')
+        base(href='/')
+        title Nodes-Talking Administrative Application
+        link(rel='stylesheet', href='css/bootstrap.css')
+        block head
+
+
+body
+    span.ghost
+    div.container-fluid
+        div.row
+            div.col-md-4
+            div.col-md-4
+                center
+                    form(name="login", action="/login", method="POST")
+                        fieldset#credentials
+                            h3.logo Nodes-Talking Admin
+                            hr
+                            div.control-group
+                                div.controls
+                                    div.input-prepend
+                                        span.add-on
+                                            i.icon-user
+                                        input#username(type="text", placeholder="account", autocomplete="off", name="username")
+                            div.control-group
+                                div.controls
+                                    div.input-prepend
+                                        span.add-on
+                                            i.icon-lock
+                                        input#password(type="password", placeholder="password", autocomplete="off", name="password")
+                        fieldset
+                            div.control-group
+                                div.controls.text-center
+                                    input(type="submit", value="Sign In")
