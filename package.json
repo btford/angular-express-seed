@@ -1,6 +1,6 @@
 {
-  "name": "blog",
-  "version": "0.1.0",
+  "name": "application-name",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "body-parser": "^1.0.2",
