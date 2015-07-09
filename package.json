@@ -5,6 +5,7 @@
   "dependencies": {
     "body-parser": "^1.0.2",
     "error-handler": "^0.1.4",
+    "errorhandler": "^1.4.1",
     "express": "~4.1.1",
     "jade": "~0.31.2",
     "method-override": "^1.0.0",
