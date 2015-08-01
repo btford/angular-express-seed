@@ -1,13 +1,17 @@
-var express = require('express'),
-  bodyParser = require('body-parser'),
-  methodOverride = require('method-override'),
-  errorHandler = require('errorhandler'),
-  morgan = require('morgan'),
-  routes = require('./routes'),
-  partials = require('./routes/partials'),
-  api = require('./routes/api'),
-  http = require('http'),
-  path = require('path');
+var express = require('express')
+  , bodyParser = require('body-parser')
+  , methodOverride = require('method-override')
+  , errorHandler = require('errorhandler')
+  , morgan = require('morgan')
+  , routes = require('./routes')
+  , partials = require('./routes/partials')
+  , api = require('./routes/api')
+  , http = require('http')
+  , path = require('path')
+  , modulesAPI = {}
+  ;
+
+modulesAPI.beers = require('./modules/beers/routes/api');
 
 var app = module.exports = express();
 
