@@ -54,6 +54,7 @@ app.use('/partials', partials);
 
 // JSON API
 app.use('/api', api);
+app.use('/api/beers', modulesAPI.beers);
 
 // redirect all others to the index (HTML5 history)
 app.get('*', function(req, res, next) {
