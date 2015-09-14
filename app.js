@@ -5,8 +5,9 @@
 
 var express = require('express'),
   bodyParser = require('body-parser'),
+  cookieParser = require('cookie-parser'),
   methodOverride = require('method-override'),
-  errorHandler = require('error-handler'),
+  errorhandler = require('errorhandler'),
   morgan = require('morgan'),
   routes = require('./routes'),
   api = require('./routes/api'),
@@ -24,8 +25,10 @@ var app = module.exports = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
+app.use(cookieParser())
 app.use(morgan('dev'));
-app.use(bodyParser());
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
 app.use(methodOverride());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -33,7 +36,7 @@ var env = process.env.NODE_ENV || 'development';
 
 // development only
 if (env === 'development') {
-  app.use(express.errorHandler());
+  app.use(errorhandler())
 }
 
 // production only
