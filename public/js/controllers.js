@@ -17,6 +17,10 @@ angular.module('myApp.controllers', []).
     });
 
   }).
+  controller('LandingCtrl', function ($scope) {
+    // write Ctrl here
+
+  }).
   controller('MyCtrl1', function ($scope) {
     // write Ctrl here
 

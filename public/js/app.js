@@ -2,14 +2,13 @@
 
 // Declare app level module which depends on filters, and services
 
-angular.module('myApp', [
-  'myApp.controllers',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives'
-]).
-config(function ($routeProvider, $locationProvider) {
+angular.module('myApp', ['ngRoute','myApp.controllers','myApp.filters','myApp.services','myApp.directives', 'ui.bootstrap'])
+.config(function ($routeProvider, $locationProvider) {
   $routeProvider.
+    when('/', {
+      templateUrl: 'partials/landing',
+      controller: 'LandingCtrl'
+    }).
     when('/view1', {
       templateUrl: 'partials/partial1',
       controller: 'MyCtrl1'
@@ -19,7 +18,7 @@ config(function ($routeProvider, $locationProvider) {
       controller: 'MyCtrl2'
     }).
     otherwise({
-      redirectTo: '/view1'
+      redirectTo: '/'
     });
 
   $locationProvider.html5Mode(true);
