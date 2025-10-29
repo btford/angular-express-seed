@@ -1,20 +1,19 @@
+var express = require('express')
+  , bodyParser = require('body-parser')
+  , methodOverride = require('method-override')
+  , errorHandler = require('errorhandler')
+  , morgan = require('morgan')
+  , routes = require('./routes')
+  , partials = require('./routes/partials')
+  , api = require('./routes/api')
+  , http = require('http')
+  , path = require('path')
+  , modulesAPI = {}
+  ;
 
-/**
- * Module dependencies
- */
-
-var express = require('express'),
-  bodyParser = require('body-parser'),
-  methodOverride = require('method-override'),
-  errorHandler = require('error-handler'),
-  morgan = require('morgan'),
-  routes = require('./routes'),
-  api = require('./routes/api'),
-  http = require('http'),
-  path = require('path');
+modulesAPI.beers = require('./modules/beers/routes/api');
 
 var app = module.exports = express();
-
 
 /**
  * Configuration
@@ -25,7 +24,8 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(morgan('dev'));
-app.use(bodyParser());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(methodOverride());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -33,7 +33,7 @@ var env = process.env.NODE_ENV || 'development';
 
 // development only
 if (env === 'development') {
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 }
 
 // production only
@@ -46,21 +46,43 @@ if (env === 'production') {
  * Routes
  */
 
-// serve index and view partials
-app.get('/', routes.index);
-app.get('/partials/:name', routes.partials);
+// serve index  
+app.use('/', routes);
+
+// server view partials
+app.use('/partials', partials);
 
 // JSON API
-app.get('/api/name', api.name);
+app.use('/api', api);
+app.use('/api/beers', modulesAPI.beers);
 
 // redirect all others to the index (HTML5 history)
-app.get('*', routes.index);
-
-
-/**
- * Start Server
- */
-
-http.createServer(app).listen(app.get('port'), function () {
-  console.log('Express server listening on port ' + app.get('port'));
+app.get('*', function(req, res, next) {
+  res.render('index');
 });
+
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
+    });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message,
+        error: {}
+    });
+});
+
+module.exports = app;
